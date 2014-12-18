@@ -15,6 +15,7 @@ var gps = {
 	gpsErrorCount : 0,
 
 	init : function() {
+                console.log("GPS INIT");
 		gps.initToggleListener();
 		gps.start();
 	},

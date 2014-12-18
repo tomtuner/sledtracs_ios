@@ -21,6 +21,8 @@ var app = {
 
 	// Application Constructor
 	initialize : function() {
+        debugger;
+                console.log("DEVICE INITIALIZE");
 		this.bindEvents();
 		this.initFastClick();
 		this.initUserId();
@@ -29,9 +31,12 @@ var app = {
 		app.timeLastSubmit = (new Date().getTime() / 1000) - 60; 
 	},
 	bindEvents : function() {
+        debugger;
 		document.addEventListener('deviceready', this.onDeviceReady, false);
 	},
 	onDeviceReady : function() {
+        debugger;
+        console.log("DEVICE READY");
 		navigator.splashscreen.hide();
 		app.checkConnection();
 		gps.init();
